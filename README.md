@@ -12,6 +12,8 @@
 
 二维码：![二维码入场券](./res/qrcode.png "二维码入场券")
 
+对应链接：[http://microdemo.bihe0832.com/MultiQrcode/index.html](http://microdemo.bihe0832.com/MultiQrcode/index.html)
+
 ### Demo：
 
 #### Demo1 :
@@ -20,11 +22,15 @@ Demo1详细展示了各种设备下的页面跳转(PC和各种移动设备）)�
 
 二维码：![二维码入场券](./res/demo1_qrcode.png "二维码入场券")
 
+对应链接：[http://microdemo.bihe0832.com/MultiQrcode/Demo1/jump.html](http://microdemo.bihe0832.com/MultiQrcode/Demo1/jump.html)
+
 #### Demo2:
 
 Demo2提供了常见应用下载的二维码的方式中，提供一个二维码支持各种平台下载。详细的跳转代码参见目录下download.html
 
 二维码：![二维码入场券](./res/demo2_qrcode.png "二维码入场券")
+
+对应链接：[http://microdemo.bihe0832.com/MultiQrcode/Demo2/download.html](http://microdemo.bihe0832.com/MultiQrcode/Demo2/download.html)
 
 #### Tools:
 
@@ -32,6 +38,8 @@ Tools提供了获取是否是移动设备，获取系统，设备类型的各种
 
 
 二维码：![二维码入场券](./res/tools_qrcode.png "二维码入场券")
+
+对应链接：[http://microdemo.bihe0832.com/MultiQrcode/tools.html](http://microdemo.bihe0832.com/MultiQrcode/tools.html)
 
 ### 实现原理：
      
