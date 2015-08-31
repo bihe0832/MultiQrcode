@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+<title>多码合一下载Demo</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="./../res/global.css" type="text/css" media="screen" />
+<link rel = "Shortcut Icon" href="http://microdemo.bihe0832.com/res/images/zixie_32.ico">
+
+<script type="text/javascript" src="./../res/brower.js" charset="UTF-8"></script>
+<script type="text/javascript">
+window.onload = function(){
+    document.getElementById("result").innerHTML = "亲爱的用户，目前我们关于" + ZixieJS.browser.getDevices() + "平台的安装包正在开发中，敬请期待，感谢您的支持！";
+};
+</script>
+</head>
+<body>
+ <h1>多码合一浏览器检测</h1>
+ <ul>
+    <li><span id="result"></span></li>
+ </ul>
+</body>
+</html>

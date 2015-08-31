@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* code@bihe832.com */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;list-style:none;}
+fieldset,img{border:0;}
+
+h1,
+span,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Microsoft Yahei", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    color: #333;
+    background-color: white;
+    margin: 10px 13px 10px 30px;
+    line-height: 36px;
+    clear: both;
+}
+h1 {
+  color: #333;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    font-size: 20px;
+}
+span {
+  color:red;
+}

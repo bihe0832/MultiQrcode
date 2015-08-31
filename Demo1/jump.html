@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+<title>多码合一 Demo</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link rel = "Shortcut Icon" href="http://microdemo.bihe0832.com/res/images/zixie_32.ico">
+<script type="text/javascript" src="./../res/brower.js" charset="UTF-8"></script>
+<script type="text/javascript">
+window.onload = function(){
+  var path = "http://microdemo.bihe0832.com/MultiQrcode/Demo1/";
+  var MultiQrcodeLink = {
+    PCWin: path + "pcwin.html",
+    PCMac: path + "pcmac.html",
+    PCUnknow: path +"pcwin.html",
+    winCE: path + "unknow.html",
+    winPhone: path + "winPhone.html",
+    android: path + "android.html",
+    iphone: path + "iphone.html",
+    ipad: path + "ipad.html",
+    unknow: path + "unknow.html"
+  };
+  if(ZixieJS.browser.isPc()){
+    var os = ZixieJS.browser.getOS();
+    if(ZixieJS.browser.OS.Mac == os){
+        window.location.href = MultiQrcodeLink.PCMac;
+    }else if(ZixieJS.browser.OS.Win == os){
+        window.location.href = MultiQrcodeLink.PCWin;
+    }else{
+        window.location.href = MultiQrcodeLink.PCUnknow;
+    }
+  }else{
+      var devices = ZixieJS.browser.getDevices();
+      if(ZixieJS.browser.devices.ipad == devices){
+        window.location.href = MultiQrcodeLink.ipad;
+      }else if(ZixieJS.browser.devices.iphone == devices){
+        window.location.href = MultiQrcodeLink.iphone;
+      }else if(ZixieJS.browser.devices.midp == devices){
+        window.location.href = MultiQrcodeLink.unknow;
+      }else if(ZixieJS.browser.devices.android == devices){
+        window.location.href = MultiQrcodeLink.android;
+      }else if(ZixieJS.browser.devices.winCE == devices){
+        window.location.href = MultiQrcodeLink.winCE;
+      }else if(ZixieJS.browser.devices.winPhone == devices){
+        window.location.href = MultiQrcodeLink.winPhone;
+      }else{
+        window.location.href = MultiQrcodeLink.unknow;
+      }
+  }
+};
+</script>
+</head>
+<body>
+ <h1>逻辑处理页</h1>
+</body>
+</html>
