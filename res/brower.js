@@ -28,11 +28,16 @@ ZixieJS.browser.OS={
 };
 //特殊app定义
 ZixieJS.browser.app={
-  uc7:"ipad",
-  ucweb:"iphone",
+  unknow:"unknow",
+  uc7:"uc7",
+  ucweb:"ucweb",
   wechat:"wechat",
-  unknow:"unknow"
-};
+  baidubrowser:"baidubrowser",
+  qqbrowser:"qqbrowser",
+  weibo:"weibo",
+  alipay:"alipay",
+  chrome:"chrome"
+}
 
 /**
  *功  能：判断平台是不是PC
@@ -54,7 +59,6 @@ ZixieJS.browser.isPc=function(){
   	}else{
       return true;
     }
-
 }
 
 /**
@@ -96,6 +100,16 @@ ZixieJS.browser.getSuperAPP=function(){
     return ZixieJS.browser.app.ucweb;
   }else if(sUserAgent.match(/MicroMessenger/i) == 'micromessenger'){
     return ZixieJS.browser.app.wechat;
+  }else if(sUserAgent.match(/baidubrowser/i) == 'baidubrowser'){
+    return ZixieJS.browser.app.baidu;
+  }else if(sUserAgent.match(/MQQBrowser/i) == 'MQQBrowser'){
+    return ZixieJS.browser.app.qqbrowser;
+  }else if(sUserAgent.match(/weibo/i) == 'weibo'){
+    return ZixieJS.browser.app.weibo;
+  }else if(sUserAgent.match(/Alipay/i) == 'Alipay'){
+    return ZixieJS.browser.app.alipay;
+  }else if(sUserAgent.match(/Chrome/i) == 'Chrome' || sUserAgent.match(/Chrome/i) == 'CriOS'){
+    return ZixieJS.browser.app.chrome;
   }else{
     return ZixieJS.browser.app.unknow;
   }
